@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRM" thread-count="5" parallel="tests">
+  <test name="Test-Runner-1">
+    <classes>
+     
+      <class name="CampaignTest.TestCampaign1"/>
+      <class name="ContactsTest.TestContact1"/>
+      <class name="OrganizationTest.TestOrganization1"/>
+ 		<class name="ContactsTest.TestContact2"/>
+        <class name="CampaignTest.CreateCampaignTest"/>
+    	<class name="CampaignTest.TestCampaign2"/>
+      	<class name="OrganizationTest.TestOrganization2"/>
+     	<class name="ContactsTest.CreateContactTest"/>
+      	<class name="OrganizationTest.CreateOrganizationTest"/>
+   
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+ 
+ 

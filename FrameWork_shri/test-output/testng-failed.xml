@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CRM]" parallel="tests">
+  <test name="Test-Runner-1(failed)" parallel="tests">
+    <classes>
+      <class name="OrganizationTest.TestOrganization1">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- OrganizationTest.TestOrganization1 -->
+      <class name="ContactsTest.TestContact1">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- ContactsTest.TestContact1 -->
+      <class name="ContactsTest.TestContact2">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- ContactsTest.TestContact2 -->
+      <class name="CampaignTest.TestCampaign2">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="CampaignTest2"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- CampaignTest.TestCampaign2 -->
+      <class name="OrganizationTest.CreateOrganizationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- OrganizationTest.CreateOrganizationTest -->
+      <class name="ContactsTest.CreateContactTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- ContactsTest.CreateContactTest -->
+      <class name="CampaignTest.CreateCampaignTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- CampaignTest.CreateCampaignTest -->
+      <class name="OrganizationTest.TestOrganization2">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- OrganizationTest.TestOrganization2 -->
+      <class name="CampaignTest.TestCampaign1">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- CampaignTest.TestCampaign1 -->
+    </classes>
+  </test> <!-- Test-Runner-1(failed) -->
+</suite> <!-- Failed suite [CRM] -->
