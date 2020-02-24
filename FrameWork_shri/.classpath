@@ -48,5 +48,6 @@
 	<classpathentry kind="lib" path="Excel files/poi-scratchpad-4.1.1.jar"/>
 	<classpathentry kind="lib" path="Excel files/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="lib" path="jar/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="jar/freemarker-2.3.29.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

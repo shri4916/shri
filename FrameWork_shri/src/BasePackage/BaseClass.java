@@ -2,12 +2,20 @@
 package BasePackage;
 
 
+import java.io.File;
+import java.util.Date;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
+import com.relevantcodes.extentreports.ExtentReports;
 
 import GenericLib.Genericlib;
 import pomClasses.Home_Page;
@@ -17,6 +25,15 @@ public class BaseClass
 {
 	public Genericlib lib;
 	public WebDriver driver;
+	ExtentReports report;
+	
+	@BeforeSuite
+	public void connectToDatabase()
+	{
+		String currentDate= new Date().toString();
+		report= new ExtentReports("./advanceReport"+currentDate+".html");
+		report.loadConfig(new File("./extent-config.xml"));
+	}
 	
 	@BeforeClass(groups= {"smokeTest"})
 	public void openBrowser()
@@ -55,6 +72,14 @@ public class BaseClass
 	{
 		driver.close();
 		System.out.println("==========CLOSE BROWSER===========");
+	}
+	
+	@AfterSuite
+	public void firstReportAT()
+	{
+		report.flush();
+		report.close();
+		
 	}
 
 }
